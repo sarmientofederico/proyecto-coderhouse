@@ -8,6 +8,20 @@ body{
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     background-color: rgb(253, 246, 232);
 }
+@media screen and (max-width:480px) and (min-width:320px) {
+    
+    /*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES AL BODY ----*/    
+    body{
+            font-size: 2rem;
+        }
+}
+@media screen and (max-width:768px) and (min-width:481px){
+    
+    body{
+        font-size: 1.5rem;
+    }    
+}
+
 h1, h2, h3{
     font-family: 'Mitr', sans-serif;
 }
@@ -122,8 +136,8 @@ header div{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr; 
     grid-template-areas: "padres"
-                         "adultos"
-                         "consultoria";
+                        "adultos"
+                        "consultoria";
     width: 80%;
     justify-content: center;
     align-items: center;
@@ -228,17 +242,41 @@ header div{
 footer section{
     text-align: center;
 }
+/*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES AL FOOTER ----*/ 
+@media screen and (max-width:768px) and (min-width:481px){
+
+    .logoFooter{
+        display: inline-block;
+        margin:0 auto 0 100px;
+    }   
+    .ctc{
+
+        width:250px;
+        font-size: 1.4rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin-top: 0;
+        margin: 5px auto 0 auto;
+    }
+    .redesSociales{
+
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px auto 0 auto;
+    }
+}
 
 
 /*------AQUI EMPIEZA HTML SOBRE MI----*/
-
 
 .seccionDos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-areas: "picture sobreMi sobreMi"
-                         "estudios estudios estudios"
-                         "trayectoria trayectoria trayectoria";
+                        "estudios estudios estudios"
+                        "trayectoria trayectoria trayectoria";
     width: 60%;
     text-align: center;
     justify-content: center;
@@ -266,7 +304,84 @@ footer section{
     margin: 0 auto 0 auto;
     grid-area: trayectoria;
 }
- 
+/*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES A SOBREMI.HTML----*/
+    @media screen and (max-width:768px) and (min-width:481px){
+    
+        .seccionDos{
+            display: grid;
+            grid-template-columns: 1fr; 
+            grid-template-areas: "picture" 
+                                "sobreMi "
+                                "estudios "
+                                "trayectoria";
+            width: 60%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin: 100px auto 0 auto;
+        }
+        .imgSobreMi{
+            grid-area: picture;
+            border-radius: 95px;
+            width: 300px;
+            display:inline-block ;
+            margin: 0 auto;
+        }
+        .sobreMiTxt{
+            margin: 0 auto 0 auto;
+            grid-area: sobreMi;
+            
+        
+        }
+        .estudiosTxt{
+            margin: 0 auto 0 auto;
+            grid-area: estudios;
+        }
+        .trayectoriaTxt{
+            margin: 0 auto 0 auto;
+            grid-area: trayectoria;
+        }
+    
+}
+@media screen and (max-width:480px) and (min-width:320px) {
+
+    .seccionDos{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-areas: "picture" 
+                            "sobreMi "
+                            "estudios "
+                            "trayectoria";
+        width: 60%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto 0 auto;
+    }
+    .imgSobreMi{
+        grid-area: picture;
+        border-radius: 95px;
+        width: 300px;
+        display:inline-block ;
+        margin: 0 auto;
+    }
+    .sobreMiTxt{
+        margin: 0 auto 0 auto;
+        grid-area: sobreMi;
+        
+
+    }
+    .estudiosTxt{
+        margin: 0 auto 0 auto;
+        grid-area: estudios;
+    }
+    .trayectoriaTxt{
+        margin: 0 auto 0 auto;
+        grid-area: trayectoria;
+    }
+        
+}
 
 /*------AQUI EMPIEZA CONTACTO----*/
 
@@ -342,142 +457,4 @@ textarea {
     margin:1rem auto;
     justify-content: space-evenly;
 
-}
-
-
-
-
-
-
-
-/*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES----*/
-
-@media screen and (max-width:768px) and (min-width:481px){
-    
-    body{
-        font-size: 1.5rem;
-    }
-    .seccionDos{
-        display: grid;
-        grid-template-columns: 1fr; 
-        grid-template-areas: "picture" 
-                             "sobreMi "
-                             "estudios "
-                             "trayectoria";
-        width: 60%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        margin: 100px auto 0 auto;
-    }
-    .imgSobreMi{
-        grid-area: picture;
-        border-radius: 95px;
-        width: 300px;
-        display:inline-block ;
-        margin: 0 auto;
-    }
-    .sobreMiTxt{
-        margin: 0 auto 0 auto;
-        grid-area: sobreMi;
-        
-    
-    }
-    .estudiosTxt{
-        margin: 0 auto 0 auto;
-        grid-area: estudios;
-    }
-    .trayectoriaTxt{
-        margin: 0 auto 0 auto;
-        grid-area: trayectoria;
-    }
-/*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES AL FOOTER ----*/ 
-
-.ctc{
-
-    width:250px;
-    font-size: 1.4rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0;
-    margin-top: 0;
-    margin: 50px auto 0 auto;
-}
-.redesSociales{
-
-    
-    display: flex;
-    justify-content: flex-end;
-    
-}
-}
-
-
-
-@media screen and (max-width:480px) and (min-width:320px) {
-    
-/*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES AL BODY ----*/    
-body{
-        font-size: 2rem;
-    }
- /*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES A SOBREMI.HTML----*/
-    .seccionDos{
-        display: grid;
-        grid-template-columns: 1fr; 
-        grid-template-areas: "picture" 
-                             "sobreMi "
-                             "estudios "
-                             "trayectoria";
-        width: 60%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin: 100px auto 0 auto;
-    }
-    .imgSobreMi{
-        grid-area: picture;
-        border-radius: 95px;
-        width: 300px;
-        display:inline-block ;
-        margin: 0 auto;
-    }
-    .sobreMiTxt{
-        margin: 0 auto 0 auto;
-        grid-area: sobreMi;
-        
-    
-    }
-    .estudiosTxt{
-        margin: 0 auto 0 auto;
-        grid-area: estudios;
-    }
-    .trayectoriaTxt{
-        margin: 0 auto 0 auto;
-        grid-area: trayectoria;
-    }
-    
-/*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES AL FOOTER ----*/ 
-    .logoFooter{
-        display: inline-block;
-        margin:0 auto 0 100px;
-    }   
-    .ctc{
-
-        width:250px;
-        font-size: 1.4rem;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0;
-        margin-top: 0;
-        margin: 5px auto 0 auto;
-    }
-    .redesSociales{
-
-        display: flex;
-        justify-content: flex-end;
-        margin: 20px auto 0 auto;
-    }
 }
