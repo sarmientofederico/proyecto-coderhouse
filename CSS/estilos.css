@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    background-color: rgb(253, 246, 232);
+}
+h1, h2, h3{
+    font-family: 'Mitr', sans-serif;
+}
+
+
+header div{ 
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo{
+    width:150px;
+
+}
+.menu{
+    font-weight:bolder;
+    text-transform:uppercase;
+    background-color: rgb(8, 55, 135);
+    list-style-type: none;
+    padding: 0; 
+    text-align: center;
+    margin: 0 auto;
+
+}
+/*------Aqui aplico display flex-------*/
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center !important;
+    justify-content: space-evenly;
+}
+.menu li{
+    margin: 0 2%;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a {
+    color: rgba(199, 80, 86); 
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.menu li a:hover{
+    background-color: rgba(199, 80, 86);
+    color:rgb(8, 55, 135);
+}  
+
+
+.menu ul ul {
+    position: absolute;
+    display: none;
+}
+.menu ul li{
+    text-align: center;
+    margin: 0 auto;
+}
+.menu ul li:hover ul{
+    display: block;
+    color: rgba(199, 80, 86);
+    background-color:rgb(8, 55, 135);
+    padding: 0;
+    margin: 0;
+    width: 8.8rem;
+    border: none; 
+}
+.menu ul ul li:hover{
+    display: block;
+    color: rgba(199, 80, 86);
+    background-color:rgb(8, 55, 135);
+    width: 8.6rem; 
+    padding: 0;
+    margin:0;
+    border: none;
+}
+
+.seccionUno{
+    margin-top: 100px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+.imgRedonda{
+    border-radius: 95px;
+    float: left;
+    width: 300px;
+}
+
+.txtAside{
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}
+
+.imgCuadrada {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    display: inline;
+}
+
+.todasLasTerapias{
+    margin-top: 100px;
+    width: 610px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.todasLasTerapias h2{
+    margin-bottom: 50px;
+}
+.terapias{
+    display: inline-block;
+    height: 300px;
+    align-items:initial;
+}
+.terapias h3{
+    text-align: center;
+}
+.terapias p{
+    padding-top: 0;
+    text-align: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    background-color:rgb(8, 55, 135);
+    color: rgba(199, 80, 86);
+    justify-content: space-between;
+    width: 100%;
+
+}
+.logoFooter{
+    height: 110px;
+    border: solid 5px rgb(8, 55, 135);
+
+}
+
+.ctc{
+
+    width:250px;
+    text-align: center;
+    margin-top: 80px;
+    padding: 0;
+}
+.redesSociales{
+
+    margin-top: 70px;
+}
+footer section{
+    text-align: center;
+}
+
+
+/*------AQUI EMPIEZA HTML SOBRE MI----*/
+
+
+.seccionDos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-areas: "picture sobreMi sobreMi"
+                         "estudios estudios estudios"
+                         "trayectoria trayectoria trayectoria";
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 0 auto;
+}
+.imgSobreMi{
+    grid-area: picture;
+    border-radius: 95px;
+    width: 300px;
+    display:inline-block ;
+    margin: 0 auto;
+}
+.sobreMiTxt{
+    margin: 0 auto 0 auto;
+    grid-area: sobreMi;
+    
+
+}
+.estudiosTxt{
+    margin: 0 auto 0 auto;
+    grid-area: estudios;
+}
+.trayectoriaTxt{
+    margin: 0 auto 0 auto;
+    grid-area: trayectoria;
+}
+ 
+
+/*------AQUI EMPIEZA CONTACTO----*/
+
+.formulario{
+    margin-top: 100px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+input, textarea, label{
+    margin: 1em;
+}
+
+textarea {
+    width: 80%;
+    margin: 0 10%;
+}
+/*------AQUI EMPIEZA GRACIAS POR CONTACTARNOS----*/
+#rta{
+    height:45vh;
+}
+#rta h2{
+    display: inline-block;
+    margin-top: 30px ;
+    margin-left: 30px;
+}
+#rta a{
+    display: block;
+    margin:45px;
+    margin-left:30px;
+}
+/*------AQUI EMPIEZA EL HTML MULTIMEDIA----*/
+
+
+.multimedia{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    
+    
+
+}#fotos h2{
+    text-align: center;
+    margin:2rem auto 2rem auto;
+    
+}
+#videos h2{
+    text-align: center;
+    margin:2rem auto 2rem auto;
+    
+}
+.imagenes img{
+    width: 28rem;
+    height: 18rem;
+}
+
+.imagenes, .videos{
+    margin:1rem auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    
+}
+.imagenes img, .videos iframe{
+    align-self: center;
+    margin:1rem auto;
+    justify-content: space-evenly;
+
+}
+
+
+
+
+
+
+
+/*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES----*/
+
+@media screen and (max-width:768px) and (min-width:481px){
+    
+    body{
+        font-size: 1.5rem;
+    }
+    .seccionDos{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-areas: "picture" 
+                             "sobreMi "
+                             "estudios "
+                             "trayectoria";
+        width: 60%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 100px auto 0 auto;
+    }
+    .imgSobreMi{
+        grid-area: picture;
+        border-radius: 95px;
+        width: 300px;
+        display:inline-block ;
+        margin: 0 auto;
+    }
+    .sobreMiTxt{
+        margin: 0 auto 0 auto;
+        grid-area: sobreMi;
+        
+    
+    }
+    .estudiosTxt{
+        margin: 0 auto 0 auto;
+        grid-area: estudios;
+    }
+    .trayectoriaTxt{
+        margin: 0 auto 0 auto;
+        grid-area: trayectoria;
+    }
+/*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES AL FOOTER ----*/ 
+
+.ctc{
+
+    width:250px;
+    font-size: 1.4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+    margin: 50px auto 0 auto;
+}
+.redesSociales{
+
+    
+    display: flex;
+    justify-content: flex-end;
+    
+}
+}
+
+
+
+@media screen and (max-width:480px) and (min-width:320px) {
+    
+/*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES AL BODY ----*/    
+body{
+        font-size: 2rem;
+    }
+ /*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES A SOBREMI.HTML----*/
+    .seccionDos{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-areas: "picture" 
+                             "sobreMi "
+                             "estudios "
+                             "trayectoria";
+        width: 60%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto 0 auto;
+    }
+    .imgSobreMi{
+        grid-area: picture;
+        border-radius: 95px;
+        width: 300px;
+        display:inline-block ;
+        margin: 0 auto;
+    }
+    .sobreMiTxt{
+        margin: 0 auto 0 auto;
+        grid-area: sobreMi;
+        
+    
+    }
+    .estudiosTxt{
+        margin: 0 auto 0 auto;
+        grid-area: estudios;
+    }
+    .trayectoriaTxt{
+        margin: 0 auto 0 auto;
+        grid-area: trayectoria;
+    }
+    
+/*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES AL FOOTER ----*/ 
+    .logoFooter{
+        display: inline-block;
+        margin:0 auto 0 100px;
+    }   
+    .ctc{
+
+        width:250px;
+        font-size: 1.4rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin-top: 0;
+        margin: 5px auto 0 auto;
+    }
+    .redesSociales{
+
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px auto 0 auto;
+    }
+}

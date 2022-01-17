@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300&family=Mitr&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+        <title>Milagros Sarmiento</title>
+</head>
+<body>
+    <header>
+        <div>
+        <a href="../index.html"><img src="../multimedia/Logo.png" alt="logo" class="logo"></img.></a>
+        </div>
+        <!--AQUI COMIENZA LA BARRA DE NAVEGACION-->
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../index.html#terapias">Terapias</a>
+                </li>
+                <li>
+                    <a href="../paginas/sobreMi.html">Sobre Mi</a>
+                </li>
+                <li>
+                    <a href="../paginas/multimedia.html">Multimedia</a>
+                    <ul>
+                        <li>
+                            <a href="../paginas/multimedia.html#fotos">Fotos</a>
+                        </li>
+                        <li>
+                            <a href="../paginas/multimedia.html#videos">Videos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../paginas/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    <!--Aqui termina la barra de navegación-->
+    </header> 
+    <main>
+        <form action="graciasporcontactarnos.html" method="GET">
+            <fieldset class="formulario">
+                <legend>
+                    <h1>Datos de contacto</h1>
+                </legend>
+                        <label for="Nombre">Nombre:</label>
+                        <input type="text"name="nombre">
+                        <br>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text"name="apellido">
+                        <br>
+                        <label for="email">E-Mail:</label>
+                        <input type="email"name="email"required>
+                        <br>
+                        <label for="where">Donde nos concociste</label>
+                        <select name="where" id="">
+                            <option value="facebook">Facebook</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="google">Google</option>
+                            <option value="others">Otros</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="comment">Comentarios</label>
+                        <br>
+                        <br>
+                        <textarea name="comment" id="" cols="45" rows="10" placeholder="Dejanos tu opinion"></textarea>
+                        <br>
+                        <label for="newsletter">Sumarme al newsletter</label>
+                        <input type="checkbox" name="newsletter" id="">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar info">
+            </fieldset>       
+    </main>
+    <footer>
+        <aside class="footer">
+            <a href="../index.html"><img src="../multimedia/Logo.png" alt="logo"class="logoFooter"></a>
+            <div class="ctc">
+                <p>milagros.sarmiento@cm.com</p>
+                <p>Telefono: (+54) 9 11 4723-4756</p>
+                </div>
+<!--AQUI IRAN LOS LINKS PARA IR A LAS REDES SOCIALES-->
+            <div class="redesSociales">
+                <a href="#"><img src="../multimedia/facebookChico.png" alt="facebook"></img></a>
+                <a href="#"><img src="../multimedia/instagramChico.png" alt="instagram"></a>
+                <a href="#"><img src="../multimedia/waspChico.png" alt="whatsapp"></a>
+            </div>
+        </aside>
+        <section>
+            <p>Todo los derchos reservados&copy;</p>
+        </section>
+</footer>
+</body>
+</html>
