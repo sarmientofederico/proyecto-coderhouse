@@ -97,7 +97,7 @@ header div{
     width: 600px;
     margin-left: auto;
     margin-right: auto;
- 
+
 }
 .imgRedonda{
     border-radius: 95px;
@@ -113,32 +113,88 @@ header div{
 
 .imgCuadrada {
     display: inline-block;
-    width: 200px;
-    height: 200px;
-    display: inline;
+    width: 300px;
+    text-align: center;
 }
 
 .todasLasTerapias{
-    margin-top: 100px;
-    width: 610px;
-    margin-left: auto;
-    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-areas: "padres"
+                         "adultos"
+                         "consultoria";
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 0 auto;
+}
+
+.padres{
+    margin: 50px auto 50px auto;
+    grid-area: padres;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:"titulo  titulo titulo"
+                        "imagen texto texto"
+                        "imagen texto texto" ;
+}
+.padres h3{
+    grid-area: titulo;
     text-align: center;
+    margin-bottom: 1rem;
 }
-.todasLasTerapias h2{
-    margin-bottom: 50px;
+.padres img{
+    grid-area: imagen;
+    align-items: center;
 }
-.terapias{
-    display: inline-block;
-    height: 300px;
-    align-items:initial;
+.padres .padresTxt{
+    grid-area: texto;
+    margin-left: 40px;
 }
-.terapias h3{
+.adultos{
+    margin: 50px auto 50px auto;
+    grid-area: adultos;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:"titulo  titulo titulo"
+                        "imagen texto texto"
+                        "imagen texto texto" ;
+}
+.adultos h3{
+    grid-area: titulo;
     text-align: center;
+    margin-bottom: 1rem;
 }
-.terapias p{
-    padding-top: 0;
+.adultos img{
+    grid-area: imagen;
+}
+.adultos .adultosTxt{
+    grid-area: texto;
+    margin-left: 40px;
+}
+.consultoria{
+    margin: 50px auto 50px auto;
+    grid-area: consultoria;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:"titulo  titulo titulo"
+                        "imagen texto texto"
+                        "imagen texto texto" ;
+}
+.consultoria h3{
+    grid-area: titulo;
     text-align: center;
+    margin-bottom: 1rem;
+}
+.consultoria img{
+    grid-area: imagen;
+}
+.consultoria .consultoriaTxt{
+    grid-area: texto;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
 }
 
 .footer{
