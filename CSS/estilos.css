@@ -12,7 +12,7 @@ body{
     
     /*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES AL BODY ----*/    
     body{
-            font-size: 2rem;
+            font-size: 1rem;
         }
 }
 @media screen and (max-width:768px) and (min-width:481px){
@@ -166,6 +166,29 @@ header div{
     grid-area: texto;
     margin-left: 40px;
 }
+@media screen and (max-width:480px) and (min-width:320px) {
+    .padres{
+        margin: 50px auto 50px auto;
+        grid-area: padres;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:"titulo"
+                            "imagen"
+                            "texto" ;
+    }
+    .padres h3{
+        grid-area: titulo;
+        text-align: center;
+    }
+    .padres img{
+        grid-area: imagen;
+        align-items: center;
+    }
+    .padres .padresTxt{
+        grid-area: texto;
+    }
+
+}
 .adultos{
     margin: 50px auto 50px auto;
     grid-area: adultos;
@@ -175,6 +198,7 @@ header div{
                         "imagen texto texto"
                         "imagen texto texto" ;
 }
+
 .adultos h3{
     grid-area: titulo;
     text-align: center;
@@ -187,19 +211,40 @@ header div{
     grid-area: texto;
     margin-left: 40px;
 }
-.consultoria{
+@media screen and (max-width:480px) and (min-width:320px) { 
+    .adultos{
+        margin: 50px auto 50px auto;
+        grid-area: adultos;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:"titulo"
+                            "imagen"
+                            "texto" ;
+    }
+    .adultos h3{
+        grid-area: titulo;
+        text-align: center;
+    }
+    .adultos img{
+        grid-area: imagen;
+    }
+    .adultos .adultosTxt{
+        grid-area: texto;
+    }
+}
+@media screen and (max-width:480px) and (min-width:320px) { 
+    .consultoria{
     margin: 50px auto 50px auto;
     grid-area: consultoria;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-areas:"titulo  titulo titulo"
-                        "imagen texto texto"
-                        "imagen texto texto" ;
+    grid-template-columns:1fr;
+    grid-template-areas:"titulo"
+                        "imagen"
+                        "texto" ;
 }
 .consultoria h3{
     grid-area: titulo;
     text-align: center;
-    margin-bottom: 1rem;
 }
 .consultoria img{
     grid-area: imagen;
@@ -208,9 +253,10 @@ header div{
     grid-area: texto;
     align-items: center;
     justify-content: center;
-    margin-left: 40px;
+}    
 }
 
+/* AQUI COMIENZA EL FOOTER */
 .footer{
     display: flex;
     flex-direction: row;
@@ -269,6 +315,7 @@ footer section{
 }
 
 
+
 /*------AQUI EMPIEZA HTML SOBRE MI----*/
 
 .seccionDos{
@@ -304,9 +351,8 @@ footer section{
     margin: 0 auto 0 auto;
     grid-area: trayectoria;
 }
-/*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES A SOBREMI.HTML----*/
-    @media screen and (max-width:768px) and (min-width:481px){
-    
+/*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES A SOBREMI.HTML----*/    
+@media screen and (max-width:768px) and (min-width:481px){
         .seccionDos{
             display: grid;
             grid-template-columns: 1fr; 
@@ -413,8 +459,9 @@ textarea {
     margin:45px;
     margin-left:30px;
 }
-/*------AQUI EMPIEZA EL HTML MULTIMEDIA----*/
 
+
+/*------AQUI EMPIEZA EL HTML MULTIMEDIA----*/
 
 .multimedia{
 
