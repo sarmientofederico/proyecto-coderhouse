@@ -106,13 +106,13 @@ header div{
     border: none;
 }
 
-.seccionUno{
+/* .seccionUno{
     margin-top: 100px;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
 
-}
+} */
 .imgRedonda{
     border-radius: 95px;
     float: left;
@@ -123,7 +123,8 @@ header div{
     display: inline-block;
     width: 300px;
     text-align: center;
-}
+} 
+
 
 .imgCuadrada {
     display: inline-block;
@@ -131,14 +132,10 @@ header div{
     text-align: center;
 }
 
+
+/*ESTO USE ANTES DE BOOTSTRAP
+
 .todasLasTerapias{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr; 
-    grid-template-areas: "padres"
-                        "adultos"
-                        "consultoria";
-    width: 80%;
     justify-content: center;
     align-items: center;
     margin: 100px auto 0 auto;
@@ -146,70 +143,39 @@ header div{
 
 .padres{
     margin: 50px auto 50px auto;
-    grid-area: padres;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-areas:"titulo  titulo titulo"
-                        "imagen texto texto"
-                        "imagen texto texto" ;
 }
 .padres h3{
-    grid-area: titulo;
     text-align: center;
     margin-bottom: 1rem;
 }
-.padres img{
-    grid-area: imagen;
-    align-items: center;
-}
+
 .padres .padresTxt{
-    grid-area: texto;
     margin-left: 40px;
 }
 .adultos{
     margin: 50px auto 50px auto;
-    grid-area: adultos;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-areas:"titulo  titulo titulo"
-                        "imagen texto texto"
-                        "imagen texto texto" ;
 }
 .adultos h3{
-    grid-area: titulo;
     text-align: center;
     margin-bottom: 1rem;
 }
-.adultos img{
-    grid-area: imagen;
-}
+
 .adultos .adultosTxt{
-    grid-area: texto;
     margin-left: 40px;
 }
 .consultoria{
     margin: 50px auto 50px auto;
-    grid-area: consultoria;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-areas:"titulo  titulo titulo"
-                        "imagen texto texto"
-                        "imagen texto texto" ;
 }
 .consultoria h3{
-    grid-area: titulo;
     text-align: center;
     margin-bottom: 1rem;
 }
-.consultoria img{
-    grid-area: imagen;
-}
+
 .consultoria .consultoriaTxt{
-    grid-area: texto;
     align-items: center;
     justify-content: center;
     margin-left: 40px;
-}
+} */
 
 .footer{
     display: flex;
@@ -220,16 +186,13 @@ header div{
     color: rgba(199, 80, 86);
     justify-content: space-between;
     width: 100%;
-
 }
 .logoFooter{
     height: 110px;
     border: solid 5px rgb(8, 55, 135);
-
 }
 
 .ctc{
-
     width:250px;
     text-align: center;
     margin-top: 80px;
