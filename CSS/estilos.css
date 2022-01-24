@@ -233,7 +233,7 @@ footer section{
 
 
 /*------AQUI EMPIEZA HTML SOBRE MI----*/
-
+/* APLIQUE BOOTSTRAP Y DEJE DE USAR GRIS
 .seccionDos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
@@ -245,14 +245,15 @@ footer section{
     justify-content: center;
     align-items: center;
     margin: 100px auto 0 auto;
-}
+}*/
 .imgSobreMi{
-    grid-area: picture;
+    /* grid-area: picture; */
     border-radius: 95px;
     width: 300px;
     display:inline-block ;
     margin: 0 auto;
 }
+/*
 .sobreMiTxt{
     margin: 0 auto 0 auto;
     grid-area: sobreMi;
@@ -266,8 +267,9 @@ footer section{
 .trayectoriaTxt{
     margin: 0 auto 0 auto;
     grid-area: trayectoria;
-}
-/*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES A SOBREMI.HTML----*/
+} */
+/* APLIQUE BOOTSTRAP Y DEJE DE LADO MEDIA QUERRYS 
+------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES A SOBREMI.HTML----
     @media screen and (max-width:768px) and (min-width:481px){
     
         .seccionDos{
@@ -343,8 +345,8 @@ footer section{
         margin: 0 auto 0 auto;
         grid-area: trayectoria;
     }
-        
-}
+         
+}*/
 
 /*------AQUI EMPIEZA CONTACTO----*/
 

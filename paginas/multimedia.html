@@ -49,21 +49,43 @@
     <main class="multimedia">
         <h1>Multimedia</h1>
         <section id="fotos">
-            <h2>Fotos</h2>
-            <section class="imagenes">        
-                <img src="../multimedia/ninos.jpg" alt="Taller de Niños">
-                <img src="../multimedia/adolescentes.jpg" alt="Taller de adolescentes">
-                <img src="../multimedia/jovenesAdultos.jpg" alt="Taller de Jovenes adultos">
-            </section>
-        </section>
-        <section id="videos">
-            <h2>Videos</h2>
-            <section class="videos">
+        <h2>Fotos</h2>
+        <div class="container">
+        <section class="imagenes">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../multimedia/ninos.jpg" class="d-block w-100" alt="Taller de Niños">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../multimedia/adolescentes.jpg" class="d-block w-100" alt="Taller de adolescentes">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../multimedia/jovenesAdultos.jpg" class="d-block w-100" alt="Taller de Jovenes adultos">
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+            </div>
+            <section id="videos">
+                <h2>Videos</h2>
+                <section class="videos">
                 <iframe width="460" height="315" src="https://www.youtube.com/embed/MeQc8-mHN9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe width="460" height="315" src="https://www.youtube.com/embed/uO9hy9XWYyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe width="460" height="315" src="https://www.youtube.com/embed/7gM9ky_LxmY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
             </section>
-        </section>
 
     </main>
     <footer>
