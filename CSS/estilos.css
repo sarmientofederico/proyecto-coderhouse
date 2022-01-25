@@ -132,6 +132,17 @@ header div{
     text-align: center;
 }
 
+.button-card{
+    color: rgba(199, 80, 86);
+    background-color: rgb(8, 55, 135); 
+    font-family: 'Fira Sans Extra Condensed', sans-serif; 
+    font-weight:bolder;
+    text-transform:uppercase;
+}
+
+.bg-card{
+    background-color: rgb(253, 246, 232);
+}
 
 /*ESTO USE ANTES DE BOOTSTRAP
 
