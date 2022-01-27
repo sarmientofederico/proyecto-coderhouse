@@ -106,13 +106,7 @@ header div{
     border: none;
 }
 
-/* .seccionUno{
-    margin-top: 100px;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
 
-} */
 .imgRedonda{
     border-radius: 95px;
     float: left;
@@ -144,49 +138,6 @@ header div{
     background-color: rgb(253, 246, 232);
 }
 
-/*ESTO USE ANTES DE BOOTSTRAP
-
-.todasLasTerapias{
-    justify-content: center;
-    align-items: center;
-    margin: 100px auto 0 auto;
-}
-
-.padres{
-    margin: 50px auto 50px auto;
-}
-.padres h3{
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.padres .padresTxt{
-    margin-left: 40px;
-}
-.adultos{
-    margin: 50px auto 50px auto;
-}
-.adultos h3{
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.adultos .adultosTxt{
-    margin-left: 40px;
-}
-.consultoria{
-    margin: 50px auto 50px auto;
-}
-.consultoria h3{
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.consultoria .consultoriaTxt{
-    align-items: center;
-    justify-content: center;
-    margin-left: 40px;
-} */
 
 .footer{
     display: flex;
@@ -244,120 +195,14 @@ footer section{
 
 
 /*------AQUI EMPIEZA HTML SOBRE MI----*/
-/* APLIQUE BOOTSTRAP Y DEJE DE USAR GRIS
-.seccionDos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-areas: "picture sobreMi sobreMi"
-                        "estudios estudios estudios"
-                        "trayectoria trayectoria trayectoria";
-    width: 60%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 100px auto 0 auto;
-}*/
+
 .imgSobreMi{
-    /* grid-area: picture; */
+
     border-radius: 95px;
     width: 300px;
     display:inline-block ;
     margin: 0 auto;
 }
-/*
-.sobreMiTxt{
-    margin: 0 auto 0 auto;
-    grid-area: sobreMi;
-    
-
-}
-.estudiosTxt{
-    margin: 0 auto 0 auto;
-    grid-area: estudios;
-}
-.trayectoriaTxt{
-    margin: 0 auto 0 auto;
-    grid-area: trayectoria;
-} */
-/* APLIQUE BOOTSTRAP Y DEJE DE LADO MEDIA QUERRYS 
-------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES A SOBREMI.HTML----
-    @media screen and (max-width:768px) and (min-width:481px){
-    
-        .seccionDos{
-            display: grid;
-            grid-template-columns: 1fr; 
-            grid-template-areas: "picture" 
-                                "sobreMi "
-                                "estudios "
-                                "trayectoria";
-            width: 60%;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            margin: 100px auto 0 auto;
-        }
-        .imgSobreMi{
-            grid-area: picture;
-            border-radius: 95px;
-            width: 300px;
-            display:inline-block ;
-            margin: 0 auto;
-        }
-        .sobreMiTxt{
-            margin: 0 auto 0 auto;
-            grid-area: sobreMi;
-            
-        
-        }
-        .estudiosTxt{
-            margin: 0 auto 0 auto;
-            grid-area: estudios;
-        }
-        .trayectoriaTxt{
-            margin: 0 auto 0 auto;
-            grid-area: trayectoria;
-        }
-    
-}
-@media screen and (max-width:480px) and (min-width:320px) {
-
-    .seccionDos{
-        display: grid;
-        grid-template-columns: 1fr; 
-        grid-template-areas: "picture" 
-                            "sobreMi "
-                            "estudios "
-                            "trayectoria";
-        width: 60%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin: 100px auto 0 auto;
-    }
-    .imgSobreMi{
-        grid-area: picture;
-        border-radius: 95px;
-        width: 300px;
-        display:inline-block ;
-        margin: 0 auto;
-    }
-    .sobreMiTxt{
-        margin: 0 auto 0 auto;
-        grid-area: sobreMi;
-        
-
-    }
-    .estudiosTxt{
-        margin: 0 auto 0 auto;
-        grid-area: estudios;
-    }
-    .trayectoriaTxt{
-        margin: 0 auto 0 auto;
-        grid-area: trayectoria;
-    }
-         
-}*/
 
 /*------AQUI EMPIEZA CONTACTO----*/
 
