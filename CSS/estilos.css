@@ -37,7 +37,7 @@ header div{
     width:150px;
 
 }
-.menu{
+/* .menu{
     font-weight:bolder;
     text-transform:uppercase;
     background-color: rgb(8, 55, 135);
@@ -46,9 +46,9 @@ header div{
     text-align: center;
     margin: 0 auto;
 
-}
+} */
 /*------Aqui aplico display flex-------*/
-.menu ul{
+/* .menu ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -104,19 +104,23 @@ header div{
     padding: 0;
     margin:0;
     border: none;
-}
+} */
 
 
 .imgRedonda{
+    display: block;
     border-radius: 95px;
-    float: left;
-    width: 300px;
+    max-width: 100%;
+
 }
 
+.divImagenRedonda{
+    /* display: inline-block !important; */
+
+}
 .txtAside{
-    display: inline-block;
-    width: 300px;
     text-align: center;
+    /* display: inline-block !important; */
 } 
 
 
