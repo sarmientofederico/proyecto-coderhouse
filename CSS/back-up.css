@@ -1,77 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
-    background-color: rgb(253, 246, 232);
-}
-@media screen and (max-width:480px) and (min-width:320px) {
-    
-    /*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES AL BODY ----*/    
-    body{
-            font-size: 2rem;
-        }
-}
-@media screen and (max-width:768px) and (min-width:481px){
-    
-    body{
-        font-size: 1.5rem;
-    }    
-}
-
-h1, h2, h3{
-    font-family: 'Mitr', sans-serif;
-}
 
 
-header div{ 
-    width: 150px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.logo{
-    width:150px;
-
-}
 
 
- .menu,.bg-nabvar-mobile {
-    background-color: rgba(8, 55, 135);
-    
 
-}
-.bg-colapsa{
-    background-color: rgba(199, 80, 86);
-}
-.fuente-navbar/* #navbarNavDropdown > ul > li.nav-item > a, #navbarNavDropdown > ul > li.nav-item.dropdown > div > a*/{
-    color: rgba(199, 80, 86)!important;
-    font-weight:bolder;
-    text-transform:uppercase;
-    text-align: center;
-} 
 
-.fuente-navbar:hover {
-    background-color: rgba(199, 80, 86);
-    color:rgb(8,55,135)!important;
-}
 
-/* #navbarNavDropdown > ul > li.nav-item > a:hover , #navbarNavDropdown > ul > li.nav-item.dropdown.show > div > a:hover{
-    background-color: rgba(199, 80, 86);
-    color:rgb(8, 55, 135);
 
-} */
 
-@media screen and (min-width:575px){
-    .fuente-navbar:hover{
-    transform: scale(1.1,1.1);
-    border-radius: 20%;
-    transition: 1s;
-    }
-    }
 /* .menu{
     font-weight:bolder;
     text-transform:uppercase;
