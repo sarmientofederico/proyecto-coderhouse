@@ -37,7 +37,37 @@ header div{
     width:150px;
 
 }
-.menu{
+
+
+.menu, #navbarNavDropdown > ul > li.nav-item.dropdown.show > div{
+    background-color: rgb(8, 55, 135);
+    
+
+}
+.bg-colapsa{
+    background-color: rgba(199, 80, 86);
+}
+#navbarNavDropdown > ul > li.nav-item > a, #navbarNavDropdown > ul > li.nav-item.dropdown.show > div > a{
+    color: rgba(199, 80, 86);
+    font-weight:bolder;
+    text-transform:uppercase;
+    text-align: center;
+} 
+
+#navbarNavDropdown > ul > li.nav-item > a:hover , #navbarNavDropdown > ul > li.nav-item.dropdown.show > div > a:hover{
+    background-color: rgba(199, 80, 86);
+    color:rgb(8, 55, 135);
+
+}
+
+@media screen and (min-width:575px){
+#navbarNavDropdown > ul > li.nav-item > a:hover , #navbarNavDropdown > ul > li.nav-item.dropdown.show > div > a:hover{
+    transform: scale(1.1,1.1);
+    border-radius: 20%;
+    transition: 1s;
+    }
+    }
+/* .menu{
     font-weight:bolder;
     text-transform:uppercase;
     background-color: rgb(8, 55, 135);
@@ -46,9 +76,9 @@ header div{
     text-align: center;
     margin: 0 auto;
 
-}
+} */
 /*------Aqui aplico display flex-------*/
-.menu ul{
+/* .menu ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -104,19 +134,26 @@ header div{
     padding: 0;
     margin:0;
     border: none;
-}
+} */
 
 
 .imgRedonda{
+    display: block;
     border-radius: 95px;
-    float: left;
-    width: 300px;
+    max-width: 100%;
+    
+
 }
+@media screen and (max-width:776px){
+    .imgRedonda{
+        max-width: 100vw;
+    }
+} 
+
 
 .txtAside{
-    display: inline-block;
-    width: 300px;
     text-align: center;
+    /* display: inline-block !important; */
 } 
 
 
