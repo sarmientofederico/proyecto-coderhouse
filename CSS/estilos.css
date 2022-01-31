@@ -37,6 +37,29 @@ header div{
     width:150px;
 
 }
+
+
+.menu, #navbarNavDropdown > ul > li.nav-item.dropdown.show > div{
+    background-color: rgb(8, 55, 135);
+    
+
+}
+body > header > nav > button.navbar-toggler > span.navbar-toggler-icon,body > header > nav > button.navbar-toggler{
+    background-color: rgba(199, 80, 86);
+}
+#navbarNavDropdown > ul > li.nav-item > a, #navbarNavDropdown > ul > li.nav-item.dropdown.show > div > a{
+    color: rgba(199, 80, 86);
+    font-weight:bolder;
+    text-transform:uppercase;
+} 
+
+#navbarNavDropdown > ul > li.nav-item > a:hover , #navbarNavDropdown > ul > li.nav-item.dropdown.show > div > a:hover{
+    background-color: rgba(199, 80, 86);
+    color:rgb(8, 55, 135);
+    transform: scale(1.1,1.1);
+    border-radius: 20%;
+    transition: 1s;
+    }
 /* .menu{
     font-weight:bolder;
     text-transform:uppercase;
